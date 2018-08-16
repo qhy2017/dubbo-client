@@ -1,0 +1,13 @@
+# intellj IDE files
+.idea/
+target/
+*.iml
+
+# log
+*.log
+logs/
+logj/
+.project
+.classpath
+.settings
+test-output
