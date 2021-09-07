@@ -17,13 +17,10 @@ public class IndexController {
 	@ResponseBody
 	@RequestMapping("/getUserName")
 	public JSONObject getUserName() throws Exception {
-//		File file = demoService.getFile();
 		JSONObject json = new JSONObject();
 		try {
 			Object sendMessage = iDemoService.sendMessage("你好哈哈");
-//			String string = IOUtils.toString(new FileInputStream(file), "UTF-8");
 			json.put("key", sendMessage);
-//			json.put("value", string.replaceAll("<", "").replaceAll("/>", ""));
 			System.out.println(json.toString());
 			System.out.println(sendMessage);
 			return json;
